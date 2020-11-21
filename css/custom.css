@@ -1,0 +1,158 @@
+/**
+
+	Project: Portfolio
+	Date: November 5, 2020
+	Author: Daniel Valença
+	Portfolio: http://danielvalenca.com
+
+**/
+
+/*==============================
+=            Global            =
+==============================*/
+
+html,body{ font-family: 'Titillium Web', sans-serif; }
+h1,h2,h3,h4,h5,h6,p,ul,li{ padding: 0; margin: 0; }
+
+/*=====  End of Global  ======*/
+
+/*==============================
+=            Custom            =
+==============================*/
+
+/* Background */
+.bg-111418{ background: #111418; }
+.bg-f8f9fa{ background: #f8f9fa; }
+.bg-green{ background: #20c997; }
+
+/* Badge */
+.badge-green{ background: #20c997; border-radius: 4px; color: #fff; font-size: 13px; font-weight: bold; padding: 4px 8px; }
+
+/* Border */
+.border-f0f2fa{ border-color: #f0f2fa !important; }
+.border-logo{ border: 2px solid #313c4e; border-radius: 50rem; }
+.border-logo:hover{ border-color: #4b5c7c; opacity: .98; }
+
+/* Button */
+.btn{ padding: 0.8rem 2.6rem; font-size: 18px; }
+.btn-green{ background: #20c997; border: 2px solid #20c997; border-radius: 50rem; color: #fff; }
+.btn-green:hover{ background: #1cac82; border: 2px solid #1cac82; color: #fff; }
+.btn-transparent-green{ background: transparent; border: 2px solid #20c997; border-radius: 50rem; color: #20c997; }
+.btn-transparent-green:hover{ background: #1cac82; border: 2px solid #1cac82; color: #fff; }
+
+/* Carousel */
+ol.carousel-indicators{
+	bottom: -50px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active{
+	border: 0;
+	border-radius: 50%;
+	width: .7rem;
+	height: .7rem;
+}
+
+ol.carousel-indicators li{ background: #C8C9CC; }
+
+ol.carousel-indicators li.active{ background: #1cac82; }
+
+/* Font */
+.fs-10{ font-size: 10px; }
+.fs-11{ font-size: 11px; }
+.fs-12{ font-size: 12px; }
+.fs-13{ font-size: 13px; }
+.fs-14{ font-size: 14px; }
+.fs-15{ font-size: 15px; }
+.fs-16{ font-size: 16px; }
+.fs-17{ font-size: 17px; }
+.fs-18{ font-size: 18px; }
+.fs-19{ font-size: 19px; }
+.fs-20{ font-size: 20px; }
+.fs-21{ font-size: 21px; }
+.fs-22{ font-size: 22px; }
+.fs-23{ font-size: 23px; }
+.fs-24{ font-size: 24px; }
+.fs-25{ font-size: 25px; }
+.fs-26{ font-size: 26px; }
+.fs-27{ font-size: 27px; }
+.fs-28{ font-size: 28px; }
+.fs-29{ font-size: 29px; }
+.fs-30{ font-size: 30px; }
+.fs-31{ font-size: 31px; }
+.fs-32{ font-size: 32px; }
+.fs-33{ font-size: 33px; }
+.fs-34{ font-size: 34px; }
+.fs-35{ font-size: 35px; }
+.fs-36{ font-size: 36px; }
+.fs-37{ font-size: 37px; }
+.fs-38{ font-size: 38px; }
+.fs-39{ font-size: 39px; }
+.fs-40{ font-size: 40px; }
+
+/* Form control */
+.form-control{ border-color: #e7eaf5; padding: 26px 15px; }
+.form-control:hover, .form-control:focus{ border-color: #ced0dd; box-shadow: none; }
+textarea.form-control{ padding-top: 13px; padding-bottom: 13px; }
+
+/* Image */
+.img-80{ width: 80px; height: 80px; object-fit: cover; }
+.img-cover{ object-fit: cover; }
+.img-profile-80{ border-radius: 50%; width: 80px; height: 80px; object-fit: cover; }
+.img-profile-150{ border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
+
+/* Link */
+.link-4c4d4d-green{ color: #4c4d4d; }
+.link-4c4d4d-green:hover{ color: #1cac82; text-decoration: none; }
+.link-green{ color: #20c997; }
+.link-green:hover{ color: #1cac82; }
+.link-light-green{ color: #aab1b8; }
+.link-light-green:hover{ color: #1cac82; }
+
+/* Line height */
+.lh-18{ line-height: 1.8rem; }
+
+/* Margin */
+.mt-30{ margin-top: 30px; }
+.mt-80{ margin-top: 80px; }
+
+/* Navbar */
+.nav-link{ color: #aab1b8 !important; font-size: 17px; font-weight: 400; }
+.nav-link.active, .nav-link:hover{ color: #1cac82 !important; }
+
+/* Padding */
+.py-100{ padding-top: 100px; padding-bottom: 100px; }
+.py-100-150{ padding-top: 100px; padding-bottom: 150px; }
+
+/* Text */
+.text-4c4d4d{ color: #4c4d4d; }
+.text-green{ color: #1cac82; }
+
+/*=====  End of Custom  ======*/
+
+/*=====================================
+=            Small Devices            =
+=====================================*/
+
+@media only screen and (max-width: 768px) {
+
+	/* Common */
+	h2.display-4{ font-size: 42px; }
+	.mt-80{ margin-top: 40px; }
+
+	/* Sections */
+    #home h1.display-3{ font-size: 50px; }
+    #home p.fs-40{ font-size: 32px; }
+
+    #about-me p.display-4{ font-size: 30px; }
+
+    #what-i-do .img-80{ width: 50px; height: 50px; }
+
+}
+
+/*=====  End of Small Devices  ======*/
