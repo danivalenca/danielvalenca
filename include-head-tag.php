@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Daniel Valenca">
 <meta name="description" content="<?= $page_description; ?>">
-<meta name="keywords" content="list">
+<meta name="keywords" content="Full Stack Web Developer,Web Developer,Developer,PHP,MySQL,HTML,CSS,JavaScript,jQuery,Bootstrap">
 
 <!-- Facebook meta tags -->
 <meta property="og:description" content="<?= $page_description; ?>">

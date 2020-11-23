@@ -7,6 +7,17 @@
 
 	<?php include('include-head-tag.php'); ?>
 
+	<!-- Google reCAPTCHA v3 -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LcxduYZAAAAABtpiUNuZBhe8S0qxst_U1w7jgNa"></script>
+    <script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LcxduYZAAAAABtpiUNuZBhe8S0qxst_U1w7jgNa', { action: 'contact' }).then(function (token) {
+            var recaptcha_response = document.getElementById('recaptcha_response');
+            recaptcha_response.value = token;
+        });
+    });
+    </script>
+
 </head>
 
 <body data-spy="scroll">
@@ -27,7 +38,7 @@
 
 	        		<div class="m-auto text-center text-white">
 	        			<p class="fs-40">Welcome</p>
-	        			<h1 class="display-3 font-weight-bold mt-2">I'm a Web Developer</h1>
+	        			<h2 class="display-3 font-weight-bold mt-2">I'm a Web Developer</h2>
 	        			<p class="fs-40 mt-2">based in Toronto, Ontario.</p>
 	        			<a href="#contact" class="btn btn-transparent-green mt-4">Hire me</a>
 	        		</div>
@@ -38,18 +49,18 @@
 	        	<!-- About me -->
 	        	<section class="py-100" id="about-me">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 	        			
 	        			<h2 class="display-4 font-weight-bold text-center">About me</h2>
 
 	        			<div class="row justify-content-center">
-	        				<div class="col-lg-5 text-center text-lg-left">
+	        				<div class="col-lg-6 text-center text-lg-left">
 	        					<h3 class="font-weight-bold mt-80">I'm Daniel Valenca, a Web Developer</h3>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">I love to work with everything related to the web, I am just fascinated about how many wonderful and useful things can be done on the web, that change everyone's life.</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">I am very proficient Web Developer with a strong PHP background with over 9 years of experience on the IT industry. My focus is always to keep things as simple as possible and make stuff better. Some areas of expertise include: HTML5, CSS3, Bootstrap, Responsive Web Development, JavaScript, jQuery, AJAX, JSON, PHP5, WordPress, WooCommerce, MySQL, XAMPP, XML, Search Engine Optimization, Sublime Text, Photoshop, Fireworks, OOP, and MVC.</p>
+	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">I am a Full Stack Web Developer based in Canada, but working Worldwide. I am passionate about designing and developing user-friendly applications. I have all the skills to create a new high quality website or improve existing websites for individuals and organisations, using the latest techniques and trends.</p>
+	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae fuga nihil qui, saepe asperiores porro eaque? Minima iste voluptates, quam. Iste culpa fuga reprehenderit soluta, rem sint eaque deleniti perspiciatis nam, incidunt quas, possimus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, ea.</p>
 	        				</div>
 	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-4 text-center text-lg-left">
+	        				<div class="col-lg-5 text-center text-lg-left">
 	        					<ul class="list-group list-group-flush fs-17 text-4c4d4d lh-18 mt-80">
 	        						<li class="list-group-item border-f0f2fa"><strong>Name:</strong> Daniel Valenca</li>
 	        						<li class="list-group-item border-f0f2fa"><strong>Email:</strong> danielvalenca@gmail.com</li>
@@ -88,7 +99,7 @@
 	        	<!-- What I do -->
 	        	<section class="bg-f8f9fa py-100" id="what-i-do">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 
 	        			<h2 class="display-4 font-weight-bold text-center">What I do</h2>
 
@@ -150,7 +161,7 @@
 	        	<!-- Resume -->
 	        	<section class="py-100" id="resume">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 	        			
 	        			<h2 class="display-4 font-weight-bold text-center">Resume</h2>
 
@@ -285,15 +296,24 @@
 	        	<!-- Portfolio -->
 	        	<section class="bg-f8f9fa py-100" id="portfolio">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 
 	        			<h2 class="display-4 font-weight-bold text-center">Portfolio</h2>
 
 	        			<div class="row">
 	        				<div class="col-lg-7">
-        						<img src="img/portfolio-myrciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 516px;">
+        						<img src="img/portfolio-danielvalenca.jpg" class="img-cover rounded w-100 mt-80" alt="Portfolio">
 	        				</div>
 	        				<div class="col-lg-1"></div>
+	        				<div class="col-lg-4 my-auto">
+	        					<h4 class="font-weight-bold mt-80">Portfolio</h4>
+	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2020</p>
+	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
+	        					<a href="https://github.com/danivalenca/danielvalenca" target="_blank" class="btn btn-green mt-4">View code</a>
+	        				</div>
+	        			</div>
+
+	        			<div class="row">
 	        				<div class="col-lg-4 my-auto">
 	        					<h4 class="font-weight-bold mt-80">School management system</h4>
 	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
@@ -301,75 +321,23 @@
 	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
 	        					<a href="#" class="btn btn-green mt-4">View pictures</a>
 	        				</div>
+	        				<div class="col-lg-1"></div>
+	        				<div class="col-lg-7">
+        						<img src="img/portfolio-myrciis.jpg" class="img-cover rounded w-100 mt-80" alt="Portfolio">
+	        				</div>
 	        			</div>
 
 	        			<div class="row">
+	        				<div class="col-lg-7">
+	        					<img src="img/portfolio-rciis.jpg" class="img-cover rounded w-100 mt-80" alt="Portfolio">
+	        				</div>
+	        				<div class="col-lg-1"></div>
 	        				<div class="col-lg-4 my-auto">
 	        					<h4 class="font-weight-bold mt-80">School institutional website</h4>
 	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
 	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
 	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
 	        					<a href="https://rciis.ca/" target="_blank" class="btn btn-green mt-4">View link</a>
-	        				</div>
-	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-7">
-	        					<img src="img/portfolio-rciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 630px;">
-	        				</div>
-	        			</div>
-
-	        			<div class="row">
-	        				<div class="col-lg-7">
-        						<img src="img/portfolio-myrciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 516px;">
-	        				</div>
-	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-4 my-auto">
-	        					<h4 class="font-weight-bold mt-80">School management system</h4>
-	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
-	        					<a href="#" class="btn btn-green mt-4">View pictures</a>
-	        				</div>
-	        			</div>
-
-	        			<div class="row">
-	        				<div class="col-lg-4 my-auto">
-	        					<h4 class="font-weight-bold mt-80">School institutional website</h4>
-	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
-	        					<a href="https://rciis.ca/" target="_blank" class="btn btn-green mt-4">View link</a>
-	        				</div>
-	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-7">
-	        					<img src="img/portfolio-rciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 630px;">
-	        				</div>
-	        			</div>
-
-	        			<div class="row">
-	        				<div class="col-lg-7">
-        						<img src="img/portfolio-myrciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 516px;">
-	        				</div>
-	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-4 my-auto">
-	        					<h4 class="font-weight-bold mt-80">School management system</h4>
-	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
-	        					<a href="#" class="btn btn-green mt-4">View pictures</a>
-	        				</div>
-	        			</div>
-
-	        			<div class="row">
-	        				<div class="col-lg-4 my-auto">
-	        					<h4 class="font-weight-bold mt-80">School institutional website</h4>
-	        					<p class="fs-17 text-secondary lh-18 mt-2">Started building in 2019</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima dicta, placeat ducimus, magnam! Dignissimos pariatur neque nostrum!</p>
-	        					<p class="fs-17 text-4c4d4d lh-18 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Suscipit doloribus in minima.</p>
-	        					<a href="https://rciis.ca/" target="_blank" class="btn btn-green mt-4">View link</a>
-	        				</div>
-	        				<div class="col-lg-1"></div>
-	        				<div class="col-lg-7">
-	        					<img src="img/portfolio-rciis.png" class="img-cover rounded w-100 mt-80" alt="Portfolio" style="height: 630px;">
 	        				</div>
 	        			</div>
 
@@ -383,7 +351,7 @@
 	        	<!-- Testimonial -->
 	        	<section class="py-100-150" id="testimonial">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 	        			
 	        			<h2 class="display-4 font-weight-bold text-center">Testimonial</h2>
 
@@ -401,10 +369,10 @@
 	        										<img src="img/testimonial-kyle.jpg" class="img-profile-80 mr-3" alt="Testimonial picture">
 	        										<div class="media-body my-auto">
 	        											<h4 class="font-weight-bold">Kyle Doré</h4>
-	        											<p class="fs-18 lh-18 text-secondary mt-1">Academic Director at RCIIS</p>
+	        											<p class="fs-17 lh-18 text-secondary mt-1">Academic Director at RCIIS</p>
 	        										</div>
 	        									</div>
-	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Daniel is one of the most talented, hardworking professionals that I have ever met before. As a designer I have worked with many developers; however, none of them caught my attention. Daniel is the best developer that I have ever worked with so far. He is also a great team player, and has wonderful, positive personality. What makes Daniel special from other developers is that he has a great passion for learning.”</p>
+	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea laboriosam at, ut optio. Vero magni consequuntur itaque soluta, quaerat cum, voluptatem doloribus accusantium dolor officia odio recusandae tempore repellat minus repellendus! Veniam reiciendis ipsum consequatur fuga atque modi est possimus beatae, assumenda sit quia praesentium, quisquam impedit unde iste tenetur? Saepe dolor laboriosam eaque repellendus ipsum.”</p>
 	        									<p class="mt-4">
 	        										<i class="fas fa-star text-warning"></i>
 	        										<i class="fas fa-star text-warning"></i>
@@ -420,7 +388,7 @@
 	        										<img src="img/testimonial-krista.jpg" class="img-profile-80 mr-3" alt="Testimonial picture">
 	        										<div class="media-body my-auto">
 	        											<h4 class="font-weight-bold">Krista Kin</h4>
-	        											<p class="fs-18 lh-18 text-secondary mt-1">Designer at Woori Education Group</p>
+	        											<p class="fs-17 lh-18 text-secondary mt-1">Designer at Woori</p>
 	        										</div>
 	        									</div>
 	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Daniel is one of the most talented, hardworking professionals that I have ever met before. As a designer I have worked with many developers; however, none of them caught my attention. Daniel is the best developer that I have ever worked with so far. He is also a great team player, and has wonderful, positive personality. What makes Daniel special from other developers is that he has a great passion for learning.”</p>
@@ -443,10 +411,10 @@
 	        										<img src="img/testimonial-cris.jpg" class="img-profile-80 mr-3" alt="Testimonial picture">
 	        										<div class="media-body my-auto">
 	        											<h4 class="font-weight-bold">Cristina Perez</h4>
-	        											<p class="fs-18 lh-18 text-secondary mt-1">Advisor at Woori Education Group</p>
+	        											<p class="fs-17 lh-18 text-secondary mt-1">Marketing Coordinator at Woori</p>
 	        										</div>
 	        									</div>
-	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo omnis minus totam magnam vel neque rem, repellendus sit, quisquam dolorem ipsam maxime expedita vitae facere soluta. Assumenda obcaecati modi nemo provident! Odio, ipsa, necessitatibus! Sequi, a voluptates fugiat odit! Quae provident odit, molestias recusandae voluptates enim incidunt hic suscipit.”</p>
+	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Daniel is by far one of the best professionals I’ve worked with. He always bring new ideas to the table, either to make process easier or just to innovate it, his problem solving skills make process way better for any company. He delivers high standard results in time, developing platforms that are amicable to use. As a team member or a leader, Daniel earns my highest recommendation.”</p>
 	        									<p class="mt-4">
 	        										<i class="fas fa-star text-warning"></i>
 	        										<i class="fas fa-star text-warning"></i>
@@ -462,10 +430,10 @@
 	        										<img src="img/testimonial-tong.jpg" class="img-profile-80 mr-3" alt="Testimonial picture">
 	        										<div class="media-body my-auto">
 	        											<h4 class="font-weight-bold">Tong Zhang</h4>
-	        											<p class="fs-18 lh-18 text-secondary mt-1">Director at RCIIS</p>
+	        											<p class="fs-17 lh-18 text-secondary mt-1">Director at RCIIS</p>
 	        										</div>
 	        									</div>
-	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Daniel is one of the most talented, hardworking professionals that I have ever met before. As a designer I have worked with many developers; however, none of them caught my attention. Daniel is the best developer that I have ever worked with so far. He is also a great team player, and has wonderful, positive personality. What makes Daniel special from other developers is that he has a great passion for learning.”</p>
+	        									<p class="fs-17 text-4c4d4d lh-18 mt-4">“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi in cumque, quae ratione nihil architecto sint quis voluptate incidunt eveniet dolor deleniti temporibus repellat natus corrupti possimus repellendus aspernatur harum totam, minima libero dolorem culpa tenetur voluptatibus. Omnis labore illo ipsa atque quae doloremque blanditiis laudantium recusandae, accusamus praesentium.”</p>
 	        									<p class="mt-4">
 	        										<i class="fas fa-star text-warning"></i>
 	        										<i class="fas fa-star text-warning"></i>
@@ -488,7 +456,7 @@
 	        	<!-- Contact -->
 	        	<section class="bg-f8f9fa py-100" id="contact">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 
 	        			<h2 class="display-4 font-weight-bold text-center">Contact</h2>
 
@@ -523,7 +491,7 @@
 	        				<div class="col-lg-1"></div>
 	        				<div class="col-lg-8">
 	        					<h4 class="font-weight-bold mt-80 text-center text-lg-left">Get in touch</h4>
-	        					<form method="post" action="" class="mt-30">
+	        					<form method="post" class="mt-30">
 	        						<div class="row">
 	        							<div class="col-lg-6">
 	        								<div class="form-group">
@@ -542,6 +510,7 @@
 	        							<label class="fs-17 text-4c4d4d" for="message">Message</label>
 	        							<textarea name="message" class="form-control" id="message" rows="4" maxlength="3000" required></textarea>
 	        						</div>
+	        						<p class="fs-15 text-muted lh-18 mt-2">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" class="link-green">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" class="link-green">Terms of Service</a> apply.</p>
 
 	        						<!-- Hidden Fields -->
 	        						<?php
@@ -552,10 +521,11 @@
 	        						$location = "{$geo['geoplugin_city']}, {$geo['geoplugin_countryName']}";
 
 	        						?>
-	        						<input type="hidden" name="location" id="location" value="<?= $location; ?>" maxlength="80">
+	        						<input type="hidden" name="location" id="location" value="<?= $location; ?>">
+			                        <input type="hidden" name="recaptcha_response" id="recaptcha_response">
 	        						<!-- End of Hidden Fields -->
 
-	        						<button type="submit" class="btn btn-green mt-2">Send message</button>
+	        						<button type="submit" class="btn btn-green mt-3">Send message</button>
 	        					</form>
 	        					<p class="fs-17 text-4c4d4d lh-18 mt-3 alert-positive d-none"><i class="fas fa-check text-green mr-1"></i> Message sent. I will read it within the next 24 hours and get back to you!</p>
 	        					<p class="fs-17 text-4c4d4d lh-18 mt-3 alert-negative d-none"><i class="fas fa-bug text-danger mr-1"></i> It was not possible to send your message. Please try again!</p>
@@ -570,17 +540,31 @@
 	        	<!-- Copyright -->
 	        	<section class="py-5" id="copyright">
 
-	        		<div class="container">
+	        		<div class="container col-lg-10">
 
 	        			<div class="row">
 	        				<div class="col-lg-6 text-center text-lg-left">
 	        					<p class="fs-17 text-4c4d4d">Copyright <i class="fas fa-copyright fs-15"></i> <?= date('Y'); ?> Daniel Valenca. All Rights Reserved.</p>
 	        				</div>
 	        				<div class="col-lg-6 text-center text-lg-right">
-	        					<ul class="list-inline mt-3 mt-lg-0">
-	        						<li class="list-inline-item border-right pr-3"><a href="#" class="fs-17 link-4c4d4d-green">Terms & Policy</a></li>
-	        						<li class="list-inline-item pl-1"><a href="#" class="fs-17 link-4c4d4d-green">Disclaimer</a></li>
-	        					</ul>
+	        					<p class="mt-3 mt-lg-0"><a href="#" class="fs-17 link-4c4d4d-green" data-toggle="modal" data-target="#modal-terms-policy">Terms & Policy</a></p>
+	        					<!-- Modal Terms & Policy -->
+	        					<div class="modal fade" id="modal-terms-policy" tabindex="-1" aria-labelledby="modal-terms-policy-label" aria-hidden="true">
+	        						<div class="modal-dialog">
+	        							<div class="modal-content">
+	        								<div class="modal-header px-4 py-3">
+	        									<h5 class="modal-title" id="modal-terms-policy-label">Terms & Policy</h5>
+	        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        										<span aria-hidden="true">&times;</span>
+	        									</button>
+	        								</div>
+	        								<div class="modal-body text-left p-4">
+	        									<p class="fs-17 text-4c4d4d lh-18">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" class="link-green">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" class="link-green">Terms of Service</a> apply.</p>
+	        								</div>
+	        							</div>
+	        						</div>
+	        					</div>
+	        					<!-- End of Modal Terms & Policy -->
 	        				</div>
 	        			</div>
 
@@ -618,16 +602,21 @@
 	            name: $('#name').val(),
                 email: $('#email').val(),
                 message: $('#message').val(),
-                location: $('#location').val()
+                location: $('#location').val(),
+                recaptcha_response: $('#recaptcha_response').val()
 	        },
 	        dataType: 'json',
 	        type: 'post',
 	        success: function(data) {
-	        	$('.alert-positive').removeClass('d-none');
-                $('#name,#email,#message').val('');
+	        	if (data == true) {
+		        	$('.alert-positive').removeClass('d-none');
+	                $('#name,#email,#message').val('');
+	        	} else {
+	        		$('.alert-negative').removeClass('d-none');
+	        	}
 	        },
 	        error: function(data) {
-	            $('.alert-negative').removeClass('d-none');
+	            // error
 	        }
 	    });
 	

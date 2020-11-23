@@ -8,8 +8,8 @@ switch ($_SERVER['SCRIPT_NAME']) {
 		$menu_option = "Home";
 		$page_title = "Daniel Valenca";
 		$page_description = "Web Developer based in Toronto, Canada";
-		$facebook_img = 'link';
-		$facebook_url = 'link';
+		$facebook_img = '#';
+		$facebook_url = '#';
 		break;
 
 	# Default
@@ -17,8 +17,8 @@ switch ($_SERVER['SCRIPT_NAME']) {
 		$menu_option = "Default";
 		$page_title = "Daniel Valenca";
 		$page_description = "Web Developer based in Toronto, Canada";
-		$facebook_img = 'link';
-		$facebook_url = 'link';
+		$facebook_img = '#';
+		$facebook_url = '#';
 
 }
 
