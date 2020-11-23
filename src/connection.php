@@ -1,10 +1,10 @@
 <?php
 
 # Local
-$servername = "localhost"; $username = "root"; $password = ""; $database = "";
+#$servername = "localhost"; $username = "root"; $password = ""; $database = "danielvalenca";
 
 # Web
-#$servername = "localhost"; $username = ""; $password = ""; $database = "";
+$servername = "localhost"; $username = "u456560808_danielvalenca"; $password = "DanielValenca@2020-11-19"; $database = "u456560808_danielvalenca";
 
 # Create connection
 $connection = @mysqli_connect($servername,$username,$password,$database);

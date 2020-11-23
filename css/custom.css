@@ -100,6 +100,9 @@ ol.carousel-indicators li.active{ background: #1cac82; }
 .form-control:hover, .form-control:focus{ border-color: #ced0dd; box-shadow: none; }
 textarea.form-control{ padding-top: 13px; padding-bottom: 13px; }
 
+/* Google reCAPTCHA v3 */
+.grecaptcha-badge { visibility: hidden; }
+
 /* Image */
 .img-80{ width: 80px; height: 80px; object-fit: cover; }
 .img-cover{ object-fit: cover; }
