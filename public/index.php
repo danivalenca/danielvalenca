@@ -184,6 +184,24 @@
             
         </section>
         <!-- Projects -->
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-light p-5">
+
+            <!-- Wrapper -->
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    
+
+                </div>
+
+            </div>
+            <!-- Wrapper -->
+            
+        </footer>
+        <!-- Footer -->
             
         <?php include('include-footer.php'); ?>
 
