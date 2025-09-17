@@ -43,56 +43,48 @@ $projects = [
     ],
     [
         "img" => "img/projects-studhub.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/4283813/file/original-c7dd9f1f6c391d33e2dca7410e86ce73.png",
         "name" => "Studhub",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
         "link" => "https://app.studhub.ca/"
     ],
     [
         "img" => "img/projects-good_shepherd_parish.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/4283813/file/original-c7dd9f1f6c391d33e2dca7410e86ce73.png",
         "name" => "Good Shepherd Parish",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
         "link" => "https://danielvalenca.com/iecbrazilcanada/"
     ],
     [
         "img" => "img/projects-myrciis.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/17590363/file/original-2c1e8386556b10adc382c03f7c7880ad.jpg",
         "name" => "MyRCIIS",
         "description" => "A dedicated student portal for RCIIS that provides international students with access to resources, events, and communication tools during their studies.",
         "link" => "https://app.rciis.ca/"
     ],
     [
         "img" => "img/projects-rciis.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/41426434/file/original-06e05b2644e14e294659c36f08244025.png",
         "name" => "RCIIS",
         "description" => "The official website of RCIIS, designed to showcase programs, events, and school culture while providing a seamless experience for prospective students.",
         "link" => "https://rciis.ca/"
     ],
     [
         "img" => "img/projects-woori_italy_fair.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/25887510/file/original-2f506d65043900afccace738397f649e.png",
         "name" => "Woori Italy Fair",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-wooriapp.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/25887510/file/original-2f506d65043900afccace738397f649e.png",
         "name" => "WooriApp",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-woori.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/25887510/file/original-2f506d65043900afccace738397f649e.png",
         "name" => "Woori",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-funase.jpg",
-        //"img" => "https://cdn.dribbble.com/userupload/25887510/file/original-2f506d65043900afccace738397f649e.png",
         "name" => "Funase",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
         "link" => "https://www.funase.pe.gov.br/"
@@ -461,81 +453,163 @@ $educations = [
 				<!-- Skills -->
 
 				<!-- Projects -->
-				<section id="projects" class="bg-light py-10">
+                <section id="projects" class="bg-light py-10">
 
-					<div class="container">
+                    <div class="container">
 
-						<div class="row justify-content-center">
+                        <div class="row justify-content-center">
 
-							<div class="col-11 col-xl-8">
+                            <div class="col-11 col-xl-8">
 
-								<h2 class="fw-bold">Projects</h2>
+                                <h2 class="fw-bold">Projects</h2>
 
-								<?php foreach ($projects as $project): ?>
+                                <?php foreach ($projects as $index => $project): ?>
 
-									<div class="card border-light-subtle rounded-4 mt-4 mt-lg-5">
+                                    <?php if ($index < 4): ?> 
 
-										<div class="row g-0">
+                                        <!-- Always visible projects -->
+                                        <div class="card border-light-subtle rounded-4 mt-4 mt-lg-5">
 
-											<div class="col-lg-4">
+                                            <div class="row g-0">
 
-												<div class="ratio ratio-1x1 d-none d-lg-block">
-													<img src="<?= htmlspecialchars($project['img']) ?>"
-				   									alt="<?= htmlspecialchars($project['name']) ?>"
-				     								class="w-100 h-100 object-fit-cover rounded-start-4"
-				     								loading="lazy">
-												</div>
+                                                <div class="col-lg-4">
 
-                                                <div class="ratio ratio-4x3 d-block d-lg-none">
-                                                    <img src="<?= htmlspecialchars($project['img']) ?>"
-                                                    alt="<?= htmlspecialchars($project['name']) ?>"
-                                                    class="w-100 h-100 object-fit-cover rounded-top-4"
-                                                    loading="lazy">
+                                                    <div class="ratio ratio-1x1 d-none d-lg-block">
+                                                        <img src="<?= htmlspecialchars($project['img']) ?>"
+                                                             alt="<?= htmlspecialchars($project['name']) ?>"
+                                                             class="w-100 h-100 object-fit-cover rounded-start-4"
+                                                             loading="lazy">
+                                                    </div>
+
+                                                    <div class="ratio ratio-4x3 d-block d-lg-none">
+                                                        <img src="<?= htmlspecialchars($project['img']) ?>"
+                                                             alt="<?= htmlspecialchars($project['name']) ?>"
+                                                             class="w-100 h-100 object-fit-cover rounded-top-4"
+                                                             loading="lazy">
+                                                    </div>
+
                                                 </div>
 
-											</div>
+                                                <div class="col">
 
-											<div class="col">
+                                                    <div class="p-4 p-lg-5 h-100">
 
-												<div class="p-4 p-lg-5 h-100">
+                                                        <div class="d-flex flex-column h-100">
 
-													<div class="d-flex flex-column h-100">
-														
-														<div class="flex-grow-1">
+                                                            <div class="flex-grow-1">
+                                                                <h3 class="fs-4 fw-semibold"><?= htmlspecialchars($project['name']) ?></h3>
+                                                                <p class="mt-2"><?= htmlspecialchars($project['description']) ?></p>
+                                                            </div>
 
-															<h3 class="fs-4 fw-semibold"><?= htmlspecialchars($project['name']) ?></h3>
+                                                            <div class="d-inline-block d-lg-flex gap-3">
+                                                                <p class="mt-3 mt-lg-0">
+                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a>
+                                                                </p>
+                                                                <p class="mt-3 mt-lg-0">
+                                                                    <a href="#" class="btn btn-light-primary">Technologies Used</a>
+                                                                </p>
+                                                            </div>
 
-															<p class="mt-2"><?= htmlspecialchars($project['description']) ?></p>
-															
-														</div>
+                                                        </div>
 
-														<div class="d-inline-block d-lg-flex gap-3">
-															
-															<p class="mt-3 mt-lg-0"><a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a></p>
-															<p class="mt-3 mt-lg-0"><a href="#" class="btn btn-light-primary">Technologies Used</a></p>
+                                                    </div>
 
-														</div>
-														
-													</div>
+                                                </div>
 
-												</div>
-												
-											</div>
-											
-										</div>
-										
-									</div>
+                                            </div>
 
-								<?php endforeach; ?>
-								
-							</div>
-							
-						</div>
-						
-					</div>
+                                        </div>
 
-				</section>
-				<!-- Projects -->
+                                    <?php endif; ?>
+
+                                <?php endforeach; ?>
+
+                                <!-- Collapsed section -->
+                                <div class="collapse" id="more-projects">
+
+                                    <?php foreach ($projects as $index => $project): ?>
+
+                                        <?php if ($index >= 4): ?>
+
+                                            <div class="card border-light-subtle rounded-4 mt-4 mt-lg-5">
+
+                                                <div class="row g-0">
+
+                                                    <div class="col-lg-4">
+
+                                                        <div class="ratio ratio-1x1 d-none d-lg-block">
+                                                            <img src="<?= htmlspecialchars($project['img']) ?>"
+                                                                 alt="<?= htmlspecialchars($project['name']) ?>"
+                                                                 class="w-100 h-100 object-fit-cover rounded-start-4"
+                                                                 loading="lazy">
+                                                        </div>
+
+                                                        <div class="ratio ratio-4x3 d-block d-lg-none">
+                                                            <img src="<?= htmlspecialchars($project['img']) ?>"
+                                                                 alt="<?= htmlspecialchars($project['name']) ?>"
+                                                                 class="w-100 h-100 object-fit-cover rounded-top-4"
+                                                                 loading="lazy">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col">
+
+                                                        <div class="p-4 p-lg-5 h-100">
+
+                                                            <div class="d-flex flex-column h-100">
+
+                                                                <div class="flex-grow-1">
+                                                                    <h3 class="fs-4 fw-semibold"><?= htmlspecialchars($project['name']) ?></h3>
+                                                                    <p class="mt-2"><?= htmlspecialchars($project['description']) ?></p>
+                                                                </div>
+
+                                                                <div class="d-inline-block d-lg-flex gap-3">
+                                                                    <p class="mt-3 mt-lg-0">
+                                                                        <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a>
+                                                                    </p>
+                                                                    <p class="mt-3 mt-lg-0">
+                                                                        <a href="#" class="btn btn-light-primary">Technologies Used</a>
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        <?php endif; ?>
+
+                                    <?php endforeach; ?>
+
+                                </div>
+
+                                <!-- Toggle button -->
+                                <div class="text-center mt-4 mt-lg-5">
+                                    <button id="toggle-projects" 
+                                            class="btn btn-outline-primary" 
+                                            type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#more-projects" 
+                                            aria-expanded="false" 
+                                            aria-controls="more-projects">
+                                        View More
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </section>
+                <!-- Projects -->
 
 				<!-- Working Experience -->
                 <section id="work-experience" class="py-10">

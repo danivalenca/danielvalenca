@@ -32,4 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
+    // Projects Collapse Button Disabled
+    document.getElementById('more-projects').addEventListener('shown.bs.collapse', function () {
+        document.getElementById('toggle-projects').disabled = true;
+    });
+
 });
