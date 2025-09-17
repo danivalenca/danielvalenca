@@ -1,0 +1,118 @@
+/* Global */
+body { font-family: "Titillium Web", sans-serif; }
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {  margin: 0; padding: 0; }
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: inherit;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+/* Buttons */
+.btn { padding: calc(.375rem * 1.4) calc(.75rem * 1.4); border-radius: .55rem; }
+
+.btn-light:hover,
+.btn-light:focus {
+    border-color: var(--bs-light);
+}
+
+.btn-light-primary {
+  color: var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-light-primary:hover,
+.btn-light-primary:focus {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-transparent-primary {
+  color: var(--bs-primary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-transparent-primary:hover,
+.btn-transparent-primary:focus {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* Active & Disabled States */
+.btn-light-primary:active,
+.btn-transparent-primary:active {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-light-primary:disabled,
+.btn-light-primary.disabled,
+.btn-transparent-primary:disabled,
+.btn-transparent-primary.disabled {
+  color: var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+  border-color: transparent;
+  opacity: 0.65;
+}
+
+/* Carousel */
+#indicators a { color: var(--bs-gray-400); }
+#indicators a.active { color: var(--bs-primary) !important; }
+#indicators a:hover { color: var(--bs-primary) !important; }
+
+/* Forms */
+.form-control, 
+.form-select {
+    border: 1px solid #dee2e6;
+    border-radius: .55rem;
+    padding: calc(.375rem * 1.4) calc(.75rem * 1.4);
+}
+
+/* Image */
+.img-avatar-sm {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.img-avatar-md {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+/* Nav */
+.nav-link{ color: var(--bs-body-color); padding: calc(.375rem * 1.4) calc(.75rem * 1.4); border-radius: .55rem !important; }
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active { background: rgba(var(--bs-primary-rgb), 0.1) !important; color: var(--bs-primary) !important; }
+
+/* Padding */
+.py-10 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+/* Mobile */
+
+/* Padding */
+@media (max-width: 991.98px) {
+
+    .py-10 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+}
