@@ -552,7 +552,7 @@ $educations = [
 
                                 <?php if ($experiences): ?>
 
-                                    <div class="accordion mt-4 rounded-4 border-0 overflow-hidden" id="accordion-work-experience">
+                                    <div class="accordion mt-3 mt-lg-4 rounded-4 border-0 overflow-hidden" id="accordion-work-experience">
 
                                         <?php foreach ($experiences as $index => $experience): ?>
 
@@ -560,16 +560,16 @@ $educations = [
 
                                                 <h2 class="accordion-header">
 
-                                                    <button 
-                                                        class="accordion-button p-0 py-4 <?= $index === 0 ? '' : 'collapsed' ?>" 
-                                                        type="button" 
-                                                        data-bs-toggle="collapse" 
-                                                        data-bs-target="#collapse-<?= $index ?>" 
-                                                        aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>" 
-                                                        aria-controls="collapse-<?= $index ?>">
+                                                    <button class="accordion-button p-0 py-4 collapsed" 
+                                                    type="button" 
+                                                    data-bs-toggle="collapse" 
+                                                    data-bs-target="#collapse-<?= $index ?>" 
+                                                    aria-expanded="false" 
+                                                    aria-controls="collapse-<?= $index ?>">
 
-                                                        <div class="d-flex align-items-center w-100">
-                                                            <div class="card bg-light border-light p-3 rounded-4">
+                                                        <div class="d-flex align-items-center w-100 me-2 me-lg-0">
+
+                                                            <div class="card bg-light border-light p-3 rounded-4 flex-shrink-0">
                                                                 <img src="<?= htmlspecialchars($experience['img']) ?>"
                                                                 alt="<?= htmlspecialchars($experience['position']) ?>"
                                                                 class="object-fit-contain"
@@ -578,13 +578,14 @@ $educations = [
                                                             </div>
 
                                                             <div class="ms-3 text-start">
-                                                                <h4 class="fs-5 mb-1">
+                                                                <h4 class="fs-5" style="line-height: 1.7rem;">
                                                                     <?= htmlspecialchars($experience['position']) ?>
                                                                     at <strong><?= htmlspecialchars($experience['company']) ?></strong>
                                                                 </h4>
-                                                                <p class="mt-2"><?= htmlspecialchars($experience['period']) ?></p>
-                                                                <p class="mt-2"><?= htmlspecialchars($experience['location']) ?></p>
+                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($experience['period']) ?></p>
+                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($experience['location']) ?></p>
                                                             </div>
+
                                                         </div>
 
                                                     </button>
@@ -592,7 +593,7 @@ $educations = [
                                                 </h2>
 
                                                 <div id="collapse-<?= $index ?>" 
-                                                class="accordion-collapse collapse <?= $index === 0 ? 'show' : '' ?>" 
+                                                class="accordion-collapse collapse" 
                                                 data-bs-parent="#accordion-work-experience">
 
                                                     <?php if (!empty($experience['description'])): ?>
@@ -643,13 +644,13 @@ $educations = [
 
 								<p class="fs-5 mt-2">Technology learning doesn't stop after graduation. I am always seeking new certificates and continuously improving my skills.</p>
 
-								<div class="row flex-nowrap overflow-auto">
+								<div class="row flex-nowrap overflow-x-auto overflow-y-hidden">
 
 									<?php foreach ($educations as $education): ?>
 
 									    <div class="col-6 col-lg-4">
 
-									        <div class="card border-light-subtle rounded-4 p-3 mt-5">
+									        <div class="card border-light-subtle rounded-4 p-3 mt-4 mt-lg-5">
 
 									            <div class="ratio ratio-4x3">
 									                <?php if (!empty($education['img']) && file_exists("img/{$education['img']}")): ?>
