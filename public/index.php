@@ -105,7 +105,7 @@ $experiences = [
         "img" => "img/experience-rciis.png",
         "position" => "Web Developer",
         "company" => "RCIIS",
-        "period" => "September 2019 - Current",
+        "period" => "Sep 2019 - Current",
         "location" => "Toronto, Canada",
         "link" => "https://www.rciis.ca/",
         "description" => [
@@ -121,7 +121,7 @@ $experiences = [
         "img" => "img/experience-woori.png",
         "position" => "Web Developer",
         "company" => "Woori Education Group",
-        "period" => "December 2016 - September 2019",
+        "period" => "Dec 2016 - Sep 2019",
         "location" => "Toronto, Canada",
         "link" => "https://www.woori.ca/",
         "description" => [
@@ -136,7 +136,7 @@ $experiences = [
         "img" => "img/experience-innovative_vision.png",
         "position" => "Technical Support",
         "company" => "Innovative Vision",
-        "period" => "September 2016 - January 2017",
+        "period" => "Sep 2016 - Jan 2017",
         "location" => "Toronto, Canada",
         "link" => "http://www.innovativevision.ca/",
         "description" => [
@@ -148,7 +148,7 @@ $experiences = [
         "img" => "img/experience-bloor_importacao.png",
         "position" => "Web Developer",
         "company" => "Bloor Importação",
-        "period" => "January 2015 - April 2016",
+        "period" => "Jan 2015 - Apr 2016",
         "location" => "Recife, Brazil",
         "link" => "https://www.bloor.ca/",
         "description" => [
@@ -164,7 +164,7 @@ $experiences = [
         "img" => "img/experience-google.png",
         "position" => "Special Collects",
         "company" => "Google",
-        "period" => "April 2014 - November 2014",
+        "period" => "Apr 2014 - Nov 2014",
         "location" => "São Paulo, Brazil",
         "link" => "https://www.rciis.ca/",
         "description" => [
@@ -179,7 +179,7 @@ $experiences = [
         "img" => "img/experience-cidiz.png",
         "position" => "Web Developer",
         "company" => "Cidiz",
-        "period" => "January 2013 - March 2014",
+        "period" => "Jan 2013 - Mar 2014",
         "location" => "Recife, Brazil",
         "link" => "https://www.cidiz.com.br/",
         "description" => [
@@ -194,7 +194,7 @@ $experiences = [
         "img" => "img/experience-funase.png",
         "position" => "Web Developer",
         "company" => "Funase",
-        "period" => "April 2010 - April 2011",
+        "period" => "Apr 2010 - Apr 2011",
         "location" => "Recife, Brazil",
         "link" => "http://www.funase.pe.gov.br/",
         "description" => [
@@ -307,52 +307,52 @@ $educations = [
 
 								<h1 class="fw-bolder">Hi, I'm Daniel Valenca</h1>
 
-								<p class="fs-5 mt-4">
+								<p class="fs-5 mt-3 mt-lg-4">
 									Full Stack Developer with <?= date('Y') - 2011 ?>+ years of experience in PHP, MySQL, and Bootstrap, focused on building scalable, user-friendly web applications. I’m passionate about clean code, great UX, and solving real-world problems through technology.
 								</p>
 
-								<div class="d-flex flex-column gap-1 fs-5 mt-4">
+								<div class="d-flex flex-column gap-1 fs-5 mt-3 mt-lg-4">
 									<p>💻 Full-Time Web Developer at <a href="https://rciis.ca/" class="link-primary text-decoration-none fw-bold" target="_blank">RCIIS</a></p>
 									<p>🚀 Building <a href="https://app.studhub.ca/" class="link-primary text-decoration-none fw-bold" target="_blank">Studhub</a>, a platform for education & immigration agencies</p>
 									<p>📚 Earning a <a href="https://www.coursera.org/professional-certificates/google-it-automation" class="link-primary text-decoration-none fw-bold" target="_blank">IT Automation with Python Certificate</a> by Google (Coursera)</p>
 								</div>
 
-								<div class="card border-light-subtle rounded-4 p-4 mt-4">
+                                <div class="card border-light-subtle rounded-4 p-4 mt-3 mt-lg-4">
 
-									<div class="d-flex text-center">
+                                    <div class="row text-center g-3">
 
-										<div class="flex-fill border-end border-light-subtle">
-											<p class="fs-4 fw-semibold"><?= date('Y') - 2011 ?>+</p>
-											<p class="text-body-secondary">Years</p>
-										</div>
+                                        <div class="col-4 col-md border-end border-light-subtle">
+                                            <p class="fs-4 fw-semibold"><?= date('Y') - 2011 ?>+</p>
+                                            <p class="text-body-secondary">Years</p>
+                                        </div>
 
-										<div class="flex-fill border-end border-light-subtle">
-											<p class="fs-4 fw-semibold">30+</p>
-											<p class="text-body-secondary">Projects</p>
-										</div>
+                                        <div class="col-4 col-md border-end border-light-subtle">
+                                            <p class="fs-4 fw-semibold">30+</p>
+                                            <p class="text-body-secondary">Projects</p>
+                                        </div>
 
-										<div class="flex-fill border-end border-light-subtle">
-											<p class="fs-4 fw-semibold">26+</p>
-											<p class="text-body-secondary">Clients</p>
-										</div>
+                                        <div class="col-4 col-md border-end border-light-subtle">
+                                            <p class="fs-4 fw-semibold">26+</p>
+                                            <p class="text-body-secondary">Clients</p>
+                                        </div>
 
-										<div class="flex-fill border-end border-light-subtle">
-											<p class="fs-4 fw-semibold"><?= count($educations) ?>+</p>
-											<p class="text-body-secondary">Certificates</p>
-										</div>
+                                        <div class="col-4 col-md border-end border-light-subtle">
+                                            <p class="fs-4 fw-semibold"><?= count($educations) ?>+</p>
+                                            <p class="text-body-secondary">Certificates</p>
+                                        </div>
 
-										<div class="flex-fill">
-											<p class="fs-4 fw-semibold">22</p>
-											<p class="text-body-secondary">Countries</p>
-										</div>
+                                        <div class="col-4 col-md">
+                                            <p class="fs-4 fw-semibold">22</p>
+                                            <p class="text-body-secondary">Countries</p>
+                                        </div>
 
-									</div>
+                                    </div>
 
-								</div>
+                                </div>
 
 								<div class="d-flex gap-3">
-									<a href="#contact" class="btn btn-primary mt-5">Contact Me</a>
-									<a href="#projects" class="btn btn-light-primary mt-5">Resume</a>
+									<a href="#contact" class="btn btn-primary mt-4 mt-lg-5">Contact Me</a>
+									<a href="#projects" class="btn btn-light-primary mt-4 mt-lg-5">Resume</a>
 								</div>
 								
 							</div>
@@ -391,7 +391,7 @@ $educations = [
 
 													<div class="col-4">
 
-														<div class="card border-light-subtle border-light rounded-4 p-3 mt-4">
+														<div class="card border-light-subtle border-light rounded-4 p-3 mt-3 mt-lg-4">
 
 															<div class="ratio ratio-1x1">
 																<img src="<?= $best_skill['logo'] ?>"
@@ -427,7 +427,7 @@ $educations = [
 
 													<div class="col-4">
 
-														<div class="card border-light-subtle border-light rounded-4 p-3 mt-4">
+														<div class="card border-light-subtle border-light rounded-4 p-3 mt-3 mt-lg-4">
 
 															<div class="ratio ratio-1x1">
 																<img src="<?= $working_skill['logo'] ?>"
@@ -473,24 +473,31 @@ $educations = [
 
 								<?php foreach ($projects as $project): ?>
 
-									<div class="card border-light-subtle rounded-4 mt-5">
+									<div class="card border-light-subtle rounded-4 mt-4 mt-lg-5">
 
 										<div class="row g-0">
 
 											<div class="col-lg-4">
 
-												<div class="ratio ratio-1x1">
+												<div class="ratio ratio-1x1 d-none d-lg-block">
 													<img src="<?= htmlspecialchars($project['img']) ?>"
 				   									alt="<?= htmlspecialchars($project['name']) ?>"
 				     								class="w-100 h-100 object-fit-cover rounded-start-4"
 				     								loading="lazy">
 												</div>
 
+                                                <div class="ratio ratio-4x3 d-block d-lg-none">
+                                                    <img src="<?= htmlspecialchars($project['img']) ?>"
+                                                    alt="<?= htmlspecialchars($project['name']) ?>"
+                                                    class="w-100 h-100 object-fit-cover rounded-top-4"
+                                                    loading="lazy">
+                                                </div>
+
 											</div>
 
 											<div class="col">
 
-												<div class="p-5 h-100">
+												<div class="p-4 p-lg-5 h-100">
 
 													<div class="d-flex flex-column h-100">
 														
@@ -502,10 +509,10 @@ $educations = [
 															
 														</div>
 
-														<div class="d-flex gap-3">
+														<div class="d-inline-block d-lg-flex gap-3">
 															
-															<p><a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a></p>
-															<p><a href="#" class="btn btn-light-primary">Technologies Used</a></p>
+															<p class="mt-3 mt-lg-0"><a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a></p>
+															<p class="mt-3 mt-lg-0"><a href="#" class="btn btn-light-primary">Technologies Used</a></p>
 
 														</div>
 														
@@ -575,8 +582,8 @@ $educations = [
                                                                     <?= htmlspecialchars($experience['position']) ?>
                                                                     at <strong><?= htmlspecialchars($experience['company']) ?></strong>
                                                                 </h4>
-                                                                <p class="text-body-secondary mt-2"><?= htmlspecialchars($experience['period']) ?></p>
-                                                                <p class="text-body-secondary mt-2"><?= htmlspecialchars($experience['location']) ?></p>
+                                                                <p class="mt-2"><?= htmlspecialchars($experience['period']) ?></p>
+                                                                <p class="mt-2"><?= htmlspecialchars($experience['location']) ?></p>
                                                             </div>
                                                         </div>
 
@@ -640,7 +647,7 @@ $educations = [
 
 									<?php foreach ($educations as $education): ?>
 
-									    <div class="col-lg-4">
+									    <div class="col-6 col-lg-4">
 
 									        <div class="card border-light-subtle rounded-4 p-3 mt-5">
 
@@ -699,13 +706,13 @@ $educations = [
 
 								<p class="fs-5 mt-2">Let’s get in touch — I’d love to hear from you.</p>
 
-								<div class="card bg-light border-light rounded-4 mt-5">
+								<div class="card bg-light border-light rounded-4 mt-4 mt-lg-5">
 
 									<div class="row g-0">
 
 										<div class="col-lg-6 order-1 order-lg-0">
 
-											<div class="p-5">
+											<div class="p-4 p-lg-5">
 
 												<form action="src/controllers/contacts.php?action=create" method="post">
 
