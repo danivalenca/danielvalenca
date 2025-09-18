@@ -17,54 +17,39 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {  margin: 0; padding: 0
 .btn { padding: calc(.375rem * 1.4) calc(.75rem * 1.4); border-radius: .55rem; }
 
 .btn-light:hover,
-.btn-light:focus {
+.btn-light:focus,
+.btn-light:active {
     border-color: var(--bs-light);
 }
 
 .btn-light-primary {
-  color: var(--bs-primary);
-  background-color: rgba(var(--bs-primary-rgb), 0.1);
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
+    color: var(--bs-primary);
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-light-primary:hover,
-.btn-light-primary:focus {
-  color: #fff;
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-}
-
-.btn-transparent-primary {
-  color: var(--bs-primary);
-  background-color: transparent;
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-transparent-primary:hover,
-.btn-transparent-primary:focus {
-  color: #fff;
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-}
-
-/* Active & Disabled States */
-.btn-light-primary:active,
-.btn-transparent-primary:active {
-  color: #fff;
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
+.btn-light-primary:focus,
+.btn-light-primary:active {
+    color: var(--bs-primary);
+    background-color: rgba(var(--bs-primary-rgb), 0.2);
+    border-color: transparent;
 }
 
 .btn-light-primary:disabled,
-.btn-light-primary.disabled,
-.btn-transparent-primary:disabled,
-.btn-transparent-primary.disabled {
-  color: var(--bs-primary);
-  background-color: rgba(var(--bs-primary-rgb), 0.05);
-  border-color: transparent;
-  opacity: 0.65;
+.btn-light-primary.disabled {
+    color: rgba(var(--bs-primary-rgb), 0.2);
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+    border-color: transparent;
+    opacity: 0.65;
+}
+
+.btn-transparent-light:hover,
+.btn-transparent-light:focus,
+.btn-transparent-light:active {
+    color: var(--bs-primary) !important;
+    background: rgba(var(--bs-primary-rgb), 0.1) !important;
 }
 
 /* Carousel */

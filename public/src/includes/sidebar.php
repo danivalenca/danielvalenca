@@ -49,15 +49,15 @@
     <!-- Bottom Quick Bar -->
     <div class="d-flex justify-content-around align-items-center p-4">
 
-        <a href="https://www.linkedin.com/in/danielvalenca/" class="btn btn-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin">
+        <a href="https://www.linkedin.com/in/danielvalenca/" class="btn btn-transparent-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin">
             <i class="bi bi-linkedin"></i>
         </a>
 
-        <a href="https://github.com/danivalenca" class="btn btn-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Github">
+        <a href="https://github.com/danivalenca" class="btn btn-transparent-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Github">
             <i class="bi bi-github"></i>
         </a>
 
-        <a href="mailto:danielvalenca@gmail.com" class="btn btn-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Send me an email">
+        <a href="mailto:danielvalenca@gmail.com" class="btn btn-transparent-light" target="_blank" data-bs-toggle="tooltip" data-bs-title="Send me an email">
             <i class="bi bi-envelope-at"></i>
         </a>
 

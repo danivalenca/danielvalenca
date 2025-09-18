@@ -592,7 +592,7 @@ $educations = [
                                 <!-- Toggle button -->
                                 <div class="text-center mt-4 mt-lg-5">
                                     <button id="toggle-projects" 
-                                            class="btn btn-outline-primary" 
+                                            class="btn btn-light-primary" 
                                             type="button" 
                                             data-bs-toggle="collapse" 
                                             data-bs-target="#more-projects" 
@@ -834,11 +834,11 @@ $educations = [
 										<div class="col-lg-6 order-0 order-lg-1">
 
 											<div class="h-100 rounded-top-4 d-block d-lg-none" 
-										    	 style="background: url('https://images.pexels.com/photos/2046790/pexels-photo-2046790.jpeg') center/cover no-repeat; min-height: 200px;">
+										    	 style="background: url('img/contact.jpeg') center/cover no-repeat; min-height: 200px;">
 										 	</div>
 
 										 	<div class="h-100 rounded-end-4 d-none d-lg-block" 
-										    	 style="background: url('https://images.pexels.com/photos/2046790/pexels-photo-2046790.jpeg') center/cover no-repeat; min-height: 200px;">
+										    	 style="background: url('img/contact.jpeg') center/cover no-repeat; min-height: 200px;">
 										 	</div>
 
 										</div>

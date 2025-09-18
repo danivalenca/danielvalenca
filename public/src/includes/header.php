@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title><?= $page_title; ?></title>
-<meta name="description" content="Web Developer portfolio of Daniel Valença — 14+ years of experience building modern web applications with PHP, MySQL, JavaScript, Bootstrap, and more.">
+<meta name="description" content="Web Developer portfolio of Daniel Valenca — <?= date('Y') - 2011 ?>+ years of experience building modern web applications with PHP, MySQL, JavaScript, Bootstrap, and more.">
 
 <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -19,16 +19,16 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph (for social sharing) -->
-<meta property="og:title" content="Daniel Valença — Web Developer">
-<meta property="og:description" content="Portfolio of Daniel Valença, Web Developer with 14+ years of experience building modern web applications and digital solutions.">
+<meta property="og:title" content="Daniel Valenca — Web Developer">
+<meta property="og:description" content="Portfolio of Daniel Valenca, Web Developer with <?= date('Y') - 2011 ?>+ years of experience building modern web applications and digital solutions.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://danielvalenca.com/">
 <meta property="og:image" content="https://danielvalenca.com/img/preview.png">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Daniel Valença — Web Developer">
-<meta name="twitter:description" content="Portfolio of Daniel Valença, Web Developer with 14+ years of experience building modern web applications and digital solutions.">
+<meta name="twitter:title" content="Daniel Valenca — Web Developer">
+<meta name="twitter:description" content="Portfolio of Daniel Valenca, Web Developer with <?= date('Y') - 2011 ?>+ years of experience building modern web applications and digital solutions.">
 <meta name="twitter:image" content="https://danielvalenca.com/img/preview.png">
 
 <!-- CSS: Bootstrap -->

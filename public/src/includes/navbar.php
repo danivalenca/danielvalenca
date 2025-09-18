@@ -15,7 +15,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-light">
+                    <a href="#" class="btn btn-light-primary">
                         <i class="bi bi-list"></i>
                     </a>
 
