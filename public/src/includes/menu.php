@@ -9,7 +9,7 @@
         <p class="text-body-secondary">Web Developer</p>
     </div>
 
-    <ul class="nav nav-pills flex-column mt-4">
+    <ul class="nav nav-pills flex-column mt-4 scrollspy-nav">
         <li class="nav-item"><a class="nav-link" href="#intro"><i class="bi bi-person-circle me-2"></i> Intro</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills"><i class="bi bi-tools me-2"></i> Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects"><i class="bi bi-person-workspace me-2"></i> Projects</a></li>

@@ -284,7 +284,7 @@ $educations = [
 			<?php require_once __DIR__ . '/src/includes/sidebar.php' ?>
 
 			<!-- Main -->
-			<main class="flex-grow-1 overflow-auto" data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-smooth-scroll="true" tabindex="0">
+			<main class="flex-grow-1 overflow-auto" data-bs-spy="scroll" data-bs-target=".scrollspy-nav" data-bs-smooth-scroll="true" tabindex="0">
 
 				<?php require_once __DIR__ . '/src/includes/navbar.php' ?>
 

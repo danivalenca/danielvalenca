@@ -34,6 +34,11 @@
 
     <div class="d-flex flex-column vh-100">
 
+        <!-- Offcanvas Header -->
+        <div class="d-flex justify-content-end p-4">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
         <?php require __DIR__ . '/menu.php'; ?>
 
     </div>
