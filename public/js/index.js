@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
+
     // Contact Modal: Confirmation
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('success') === 'contact-created') {
@@ -55,4 +55,5 @@ document.addEventListener("DOMContentLoaded", function() {
             if (toggleBtn) toggleBtn.disabled = true;
         });
     }
+    
 });
