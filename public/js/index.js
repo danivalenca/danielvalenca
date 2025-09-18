@@ -34,12 +34,21 @@ document.addEventListener("DOMContentLoaded", function() {
         let prevScrollpos = 0;
         main.addEventListener("scroll", function () {
             let currentScrollPos = main.scrollTop;
+
             if (window.innerWidth < 1200) {
-                if (prevScrollpos > currentScrollPos + 5) {
+                // Always show at the very top
+                if (currentScrollPos <= 0) {
                     navbar.classList.add("sticky-top");
-                } else if (currentScrollPos > prevScrollpos + 5) {
+                } 
+                // Show when scrolling up
+                else if (prevScrollpos > currentScrollPos + 5) {
+                    navbar.classList.add("sticky-top");
+                } 
+                // Hide when scrolling down
+                else if (currentScrollPos > prevScrollpos + 5) {
                     navbar.classList.remove("sticky-top");
                 }
+
                 prevScrollpos = currentScrollPos;
             } else {
                 navbar.classList.add("sticky-top");
