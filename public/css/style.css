@@ -99,6 +99,9 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {  margin: 0; padding: 0
 .nav-link:focus,
 .nav-link.active { background: rgba(var(--bs-primary-rgb), 0.1) !important; color: var(--bs-primary) !important; }
 
+#navbar-mobile { position: sticky; top: 0; transition: transform 0.3s ease-in-out; }
+#navbar-mobile:not(.sticky-top) { transform: translateY(-100%); }
+
 /* Padding */
 .py-10 {
     padding-top: 6rem !important;

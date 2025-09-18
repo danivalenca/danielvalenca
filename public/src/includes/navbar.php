@@ -1,4 +1,4 @@
-<nav class="border-bottom border-light-subtle py-4 d-xl-none sticky-top bg-white">
+<nav id="navbar-mobile" class="border-bottom border-light-subtle py-4 d-xl-none sticky-top bg-white">
 
     <div class="container">
 
