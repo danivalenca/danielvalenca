@@ -1,10 +1,10 @@
 <div class="flex-grow-1 overflow-auto p-4">
 
     <div class="text-center">
-        <img src="https://cdn-icons-png.flaticon.com/128/1999/1999625.png" 
-             alt="Daniel Valenca" 
-             class="object-fit-contain" 
-             style="width: 86px; height: 86px;">
+        <img src="img/avatar-3.jpg" 
+        alt="Daniel Valenca" 
+        class="mw-100 mh-100 rounded-circle object-fit-contain" 
+        style="width: 128px; height: 128px;">
         <p class="fs-5 fw-semibold mt-2">Daniel Valenca</p>
         <p class="text-body-secondary">Web Developer</p>
     </div>
