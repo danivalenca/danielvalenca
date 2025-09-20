@@ -1,7 +1,7 @@
 <div class="flex-grow-1 overflow-auto p-4">
 
     <div class="text-center">
-        <img src="img/avatar.jpg" 
+        <img src="img/avatar.png" 
         alt="Daniel Valenca" 
         class="mw-100 mh-100 rounded-circle object-fit-contain" 
         style="width: 128px; height: 128px;">
