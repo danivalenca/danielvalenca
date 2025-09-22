@@ -3,7 +3,7 @@
 require_once __DIR__ . '/src/includes/config.php';
 
 // Define skills
-$best_skills = [
+$skills_best = [
     [ "name" => "HTML", "logo" => "img/skills-html.png"],
     [ "name" => "CSS", "logo" => "img/skills-css.png"],
     [ "name" => "PHP", "logo" => "img/skills-php.png"],
@@ -20,7 +20,7 @@ $best_skills = [
     [ "name" => "Figma", "logo" => "img/skills-figma.png"],
 ];
 
-$working_skills = [
+$skills_working = [
     [ "name" => "React", "logo" => "img/skills-react.png" ],
     [ "name" => "Node.js", "logo" => "img/skills-node.js.png" ],
     [ "name" => "Python", "logo" => "img/skills-python.png" ],
@@ -39,60 +39,78 @@ $projects = [
         "img" => "https://cdn.dribbble.com/userupload/17719501/file/original-fe25b3f94b2b4a9f29c0fb8c789fea65.png?resize=752x564&vertical=center",
         "name" => "Playground",
         "description" => "An experimental platform where I test and prototype new web technologies, frameworks, and design ideas before applying them in production projects.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://app.playground.ca/"
     ],
     [
         "img" => "img/projects-studhub.jpg",
         "name" => "Studhub",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
+        "tech" => ["a", "b", "c"],
+        "button" => "View Images",
         "link" => "https://app.studhub.ca/"
     ],
     [
         "img" => "img/projects-good-shepherd-parish.jpg",
         "name" => "Good Shepherd Parish",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://danielvalenca.com/iecbrazilcanada/"
     ],
     [
         "img" => "img/projects-myrciis.jpg",
         "name" => "MyRCIIS",
         "description" => "A dedicated student portal for RCIIS that provides international students with access to resources, events, and communication tools during their studies.",
+        "tech" => ["a", "b", "c"],
+        "button" => "View Images",
         "link" => "https://app.rciis.ca/"
     ],
     [
         "img" => "img/projects-rciis.jpg",
         "name" => "RCIIS",
         "description" => "The official website of RCIIS, designed to showcase programs, events, and school culture while providing a seamless experience for prospective students.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://rciis.ca/"
     ],
     [
         "img" => "img/projects-woori-italy-fair.jpg",
         "name" => "Woori Italy Fair",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-wooriapp.jpg",
         "name" => "WooriApp",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
+        "tech" => ["a", "b", "c"],
+        "button" => "View Images",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-woori.jpg",
         "name" => "Woori",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
     [
         "img" => "img/projects-funase.jpg",
         "name" => "Funase",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
+        "tech" => ["a", "b", "c"],
+        "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
 ];
 
-// Define experiences
-$experiences = [
+// Define work experiences
+$work_experiences = [
     [
         "img" => "img/work-experience-rciis.png",
         "position" => "Web Developer",
@@ -379,21 +397,21 @@ $educations = [
 
 											<div class="row text-center">
 
-												<?php foreach ($best_skills as $best_skill): ?>
+												<?php foreach ($skills_best as $skill_best): ?>
 
 													<div class="col-4">
 
 														<div class="card border-light-subtle border-light rounded-4 p-3 mt-3 mt-lg-4">
 
 															<div class="ratio ratio-1x1">
-																<img src="<?= $best_skill['logo'] ?>"
-																     alt="<?= htmlspecialchars($best_skill['name']) ?> logo"
+																<img src="<?= $skill_best['logo'] ?>"
+																     alt="<?= htmlspecialchars($skill_best['name']) ?> logo"
 																     class="w-100 h-100 object-fit-contain" loading="lazy">
 															</div>
 
 														</div>
 
-														<p class="mt-2"><?= htmlspecialchars($best_skill['name']) ?></p>
+														<p class="mt-2"><?= htmlspecialchars($skill_best['name']) ?></p>
 
 													</div>
 												
@@ -415,21 +433,21 @@ $educations = [
 
 											<div class="row text-center">
 
-												<?php foreach ($working_skills as $working_skill): ?>
+												<?php foreach ($skills_working as $skill_working): ?>
 
 													<div class="col-4">
 
 														<div class="card border-light-subtle border-light rounded-4 p-3 mt-3 mt-lg-4">
 
 															<div class="ratio ratio-1x1">
-																<img src="<?= $working_skill['logo'] ?>"
-																     alt="<?= htmlspecialchars($working_skill['name']) ?> logo"
+																<img src="<?= $skill_working['logo'] ?>"
+																     alt="<?= htmlspecialchars($skill_working['name']) ?> logo"
 																     class="w-100 h-100 object-fit-contain" loading="lazy">
 															</div>
 
 														</div>
 
-														<p class="mt-2"><?= htmlspecialchars($working_skill['name']) ?></p>
+														<p class="mt-2"><?= htmlspecialchars($skill_working['name']) ?></p>
 
 													</div>
 												
@@ -503,7 +521,9 @@ $educations = [
 
                                                             <div class="d-inline-block d-lg-flex gap-3">
                                                                 <p class="mt-3 mt-lg-0">
-                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a>
+                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">
+                                                                        <?= htmlspecialchars($project['button']) ?>
+                                                                    </a>
                                                                 </p>
                                                                 <p class="mt-3 mt-lg-0">
                                                                     <a href="#" class="btn btn-light-primary">Technologies Used</a>
@@ -624,11 +644,11 @@ $educations = [
 
                                 <p class="fs-5 mt-2">I’ve built solutions for companies in Canada and Brazil, ranging from websites and e-commerce to CRMs and learning management systems.</p>
 
-                                <?php if ($experiences): ?>
+                                <?php if ($work_experiences): ?>
 
                                     <div class="accordion mt-3 mt-lg-4 rounded-4 border-0 overflow-hidden" id="accordion-work-experience">
 
-                                        <?php foreach ($experiences as $index => $experience): ?>
+                                        <?php foreach ($work_experiences as $index => $work_experience): ?>
 
                                             <div class="accordion-item border-0 <?= $index === 0 ? '' : 'border-top border-light-subtle' ?>">
 
@@ -644,8 +664,8 @@ $educations = [
                                                         <div class="d-flex align-items-center w-100 me-2 me-lg-0">
 
                                                             <div class="card bg-light border-light p-3 rounded-4 flex-shrink-0">
-                                                                <img src="<?= htmlspecialchars($experience['img']) ?>"
-                                                                alt="<?= htmlspecialchars($experience['position']) ?>"
+                                                                <img src="<?= htmlspecialchars($work_experience['img']) ?>"
+                                                                alt="<?= htmlspecialchars($work_experience['position']) ?>"
                                                                 class="object-fit-contain"
                                                                 loading="lazy"
                                                                 style="width: 64px; height: 64px;">
@@ -653,11 +673,11 @@ $educations = [
 
                                                             <div class="ms-3 text-start">
                                                                 <h4 class="fs-5" style="line-height: 1.7rem;">
-                                                                    <?= htmlspecialchars($experience['position']) ?>
-                                                                    at <strong><?= htmlspecialchars($experience['company']) ?></strong>
+                                                                    <?= htmlspecialchars($work_experience['position']) ?>
+                                                                    at <strong><?= htmlspecialchars($work_experience['company']) ?></strong>
                                                                 </h4>
-                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($experience['period']) ?></p>
-                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($experience['location']) ?></p>
+                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($work_experience['period']) ?></p>
+                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($work_experience['location']) ?></p>
                                                             </div>
 
                                                         </div>
@@ -670,14 +690,14 @@ $educations = [
                                                 class="accordion-collapse collapse" 
                                                 data-bs-parent="#accordion-work-experience">
 
-                                                    <?php if (!empty($experience['description'])): ?>
+                                                    <?php if (!empty($work_experience['description'])): ?>
 
                                                         <div class="p-0 pb-4">
 
                                                             <ul class="mb-0 ps-4">
-                                                                <?php foreach ($experience['description'] as $i => $desc): ?>
+                                                                <?php foreach ($work_experience['description'] as $i => $description): ?>
                                                                     <li class="<?= $i > 0 ? 'mt-2' : '' ?>">
-                                                                        <?= htmlspecialchars($desc) ?>
+                                                                        <?= htmlspecialchars($description) ?>
                                                                     </li>
                                                                 <?php endforeach; ?>
                                                             </ul>
