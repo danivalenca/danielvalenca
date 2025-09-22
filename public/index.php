@@ -210,10 +210,10 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "",
+        "img" => "education-troubleshooting_and_debugging_techniques-2025-09.jpg",
         "period" => "Sep 2025",
         "title" => "Troubleshooting and Debugging Techniques",
-        "link" => "https://www.coursera.org/professional-certificates/google-it-automation",
+        "link" => "https://www.coursera.org/learn/troubleshooting-debugging-techniques",
         "provider" => "Google",
         "platform" => "(via Coursera)"
     ],
@@ -221,7 +221,7 @@ $educations = [
         "img" => "education-introduction_to_git_and_github-google-2025-02.jpg",
         "period" => "Feb 2025",
         "title" => "Introduction to Git and GitHub",
-        "link" => "https://www.coursera.org/professional-certificates/google-it-automation",
+        "link" => "https://www.coursera.org/learn/introduction-git-github",
         "provider" => "Google",
         "platform" => "(via Coursera)"
     ],
@@ -229,7 +229,7 @@ $educations = [
         "img" => "education-using_python_to_interact_with_the_operating_system-google-2025-01.jpg",
         "period" => "Jan 2025",
         "title" => "Using Python to Interact with the Operating System",
-        "link" => "https://www.coursera.org/professional-certificates/google-it-automation",
+        "link" => "https://www.coursera.org/learn/python-operating-system",
         "provider" => "Google",
         "platform" => "(via Coursera)"
     ],
@@ -237,7 +237,7 @@ $educations = [
         "img" => "education-crash_course_on_python-google-2024-12.jpg",
         "period" => "Dec 2024",
         "title" => "Crash Course on Python",
-        "link" => "https://www.coursera.org/professional-certificates/google-it-automation",
+        "link" => "https://www.coursera.org/learn/python-crash-course",
         "provider" => "Google",
         "platform" => "(via Coursera)"
     ],
