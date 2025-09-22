@@ -26,9 +26,9 @@ $working_skills = [
     [ "name" => "Python", "logo" => "img/skills-python.png" ],
     [ "name" => "Docker", "logo" => "img/skills-docker.png" ],
     [ "name" => "Linux", "logo" => "img/skills-linux.png" ], 
-    [ "name" => "Cloud AWS", "logo" => "img/skills-cloud_aws.png" ],
+    [ "name" => "Cloud AWS", "logo" => "img/skills-cloud-aws.png" ],
     [ "name" => "Oracle", "logo" => "img/skills-oracle.png" ],
-    [ "name" => "Analytics", "logo" => "img/skills-google_analytics.png" ],
+    [ "name" => "Analytics", "logo" => "img/skills-google-analytics.png" ],
     [ "name" => "Java", "logo" => "img/skills-java.png" ],
     [ "name" => ".NET", "logo" => "img/skills-.net.png" ],
 ];
@@ -48,7 +48,7 @@ $projects = [
         "link" => "https://app.studhub.ca/"
     ],
     [
-        "img" => "img/projects-good_shepherd_parish.jpg",
+        "img" => "img/projects-good-shepherd-parish.jpg",
         "name" => "Good Shepherd Parish",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
         "link" => "https://danielvalenca.com/iecbrazilcanada/"
@@ -66,7 +66,7 @@ $projects = [
         "link" => "https://rciis.ca/"
     ],
     [
-        "img" => "img/projects-woori_italy_fair.jpg",
+        "img" => "img/projects-woori-italy-fair.jpg",
         "name" => "Woori Italy Fair",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
         "link" => "https://www.funase.pe.gov.br/"
@@ -94,7 +94,7 @@ $projects = [
 // Define experiences
 $experiences = [
     [
-        "img" => "img/experience-rciis.png",
+        "img" => "img/work-experience-rciis.png",
         "position" => "Web Developer",
         "company" => "RCIIS",
         "period" => "Sep 2019 - Current",
@@ -110,7 +110,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-woori.png",
+        "img" => "img/work-experience-woori.png",
         "position" => "Web Developer",
         "company" => "Woori Education Group",
         "period" => "Dec 2016 - Sep 2019",
@@ -125,7 +125,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-innovative_vision.png",
+        "img" => "img/work-experience-innovative-vision.png",
         "position" => "Technical Support",
         "company" => "Innovative Vision",
         "period" => "Sep 2016 - Jan 2017",
@@ -137,7 +137,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-bloor_importacao.png",
+        "img" => "img/work-experience-bloor-importacao.png",
         "position" => "Web Developer",
         "company" => "Bloor Importação",
         "period" => "Jan 2015 - Apr 2016",
@@ -153,7 +153,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-google.png",
+        "img" => "img/work-experience-google.png",
         "position" => "Special Collects",
         "company" => "Google",
         "period" => "Apr 2014 - Nov 2014",
@@ -168,7 +168,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-cidiz.png",
+        "img" => "img/work-experience-cidiz.png",
         "position" => "Web Developer",
         "company" => "Cidiz",
         "period" => "Jan 2013 - Mar 2014",
@@ -183,7 +183,7 @@ $experiences = [
         ]
     ],
     [
-        "img" => "img/experience-funase.png",
+        "img" => "img/work-experience-funase.png",
         "position" => "Web Developer",
         "company" => "Funase",
         "period" => "Apr 2010 - Apr 2011",
@@ -210,7 +210,7 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "education-troubleshooting_and_debugging_techniques-2025-09.jpg",
+        "img" => "education-troubleshooting-and-debugging-techniques-2025-09.jpg",
         "period" => "Sep 2025",
         "title" => "Troubleshooting and Debugging Techniques",
         "link" => "https://www.coursera.org/learn/troubleshooting-debugging-techniques",
@@ -218,7 +218,7 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "education-introduction_to_git_and_github-google-2025-02.jpg",
+        "img" => "education-introduction-to-git-and-github-google-2025-02.jpg",
         "period" => "Feb 2025",
         "title" => "Introduction to Git and GitHub",
         "link" => "https://www.coursera.org/learn/introduction-git-github",
@@ -226,7 +226,7 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "education-using_python_to_interact_with_the_operating_system-google-2025-01.jpg",
+        "img" => "education-using-python-to-interact-with-the-operating-system-google-2025-01.jpg",
         "period" => "Jan 2025",
         "title" => "Using Python to Interact with the Operating System",
         "link" => "https://www.coursera.org/learn/python-operating-system",
@@ -234,7 +234,7 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "education-crash_course_on_python-google-2024-12.jpg",
+        "img" => "education-crash-course-on-python-google-2024-12.jpg",
         "period" => "Dec 2024",
         "title" => "Crash Course on Python",
         "link" => "https://www.coursera.org/learn/python-crash-course",
@@ -242,7 +242,7 @@ $educations = [
         "platform" => "(via Coursera)"
     ],
     [
-        "img" => "education-graduate_certificate_in_software_engineering-ufpr-2010-12.jpg",
+        "img" => "education-graduate-certificate-in-software-engineering-ufpr-2010-12.jpg",
         "period" => "Jan 2009 - Dec 2010",
         "title" => "Graduate Certificate in Software Engineering",
         "link" => "https://das.ufpr.br/",
@@ -250,7 +250,7 @@ $educations = [
         "platform" => ""
     ],
     [
-        "img" => "education-undergraduate_degree_in_internet_systems_technology-fmr-2008-12.jpg",
+        "img" => "education-undergraduate-degree-in-internet-systems-technology-fmr-2008-12.jpg",
         "period" => "Jan 2006 - Dec 2008",
         "title" => "Undergraduate Degree in Internet Systems Technology",
         "link" => "https://das.ufpr.br/",
