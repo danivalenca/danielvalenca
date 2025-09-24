@@ -57,6 +57,9 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {  margin: 0; padding: 0
 #indicators a.active { color: var(--bs-primary) !important; }
 #indicators a:hover { color: var(--bs-primary) !important; }
 
+/* Google reCAPTCHA */
+.grecaptcha-badge { visibility: hidden; }
+
 /* Forms */
 .form-control, 
 .form-select {
