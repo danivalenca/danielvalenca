@@ -57,7 +57,7 @@ $projects = [
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
         "tech" => ["a", "b", "c"],
         "button" => "Live Preview",
-        "link" => "https://danielvalenca.com/iecbrazilcanada/"
+        "link" => "https://cecbrazil.ca/"
     ],
     [
         "img" => "img/projects-myrciis.jpg",
@@ -521,7 +521,7 @@ $educations = [
 
                                                             <div class="d-inline-block d-lg-flex gap-3">
                                                                 <p class="mt-3 mt-lg-0">
-                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">
+                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary" target="_blank">
                                                                         <?= htmlspecialchars($project['button']) ?>
                                                                     </a>
                                                                 </p>
