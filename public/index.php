@@ -287,7 +287,7 @@ $educations = [
  		<?php require_once __DIR__ . '/src/includes/header.php' ?>
 
  		<!-- JS: Google reCAPTCHA -->
- 		<script src="https://www.google.com/recaptcha/api.js" defer></script>
+ 		<script src="https://www.google.com/recaptcha/api.js?render=6LcIxcsrAAAAALKFdPEmXPkusdFiBOOnJm_WPKKL"></script>
 
  		<!-- JS: Custom -->
  		<script src="js/index.js?v=<?= filemtime(__DIR__ . '/js/index.js') ?>" defer></script>

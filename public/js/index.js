@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (form) {
         form.addEventListener("submit", function(e) {
             e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute("6LcIxcsrAAAAALKFdPEmXPkusdFiBOOnJm_WPKKL", {action: "contact"}).then(function(token) {
-                    document.getElementById("g-recaptcha-response").value = token;
-                    form.submit();
-                });
+
+            grecaptcha.ready(function () {
+                grecaptcha.execute("6LcIxcsrAAAAALKFdPEmXPkusdFiBOOnJm_WPKKL", { action: "contact" })
+                    .then(function (token) {
+                        document.getElementById("g-recaptcha-response").value = token;
+                        form.submit();
+                    });
             });
         });
     }
