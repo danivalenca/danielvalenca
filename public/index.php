@@ -22,7 +22,8 @@ $skills_best = [
 
 $skills_working = [
     [ "name" => "React", "logo" => "img/skills-react.png" ],
-    [ "name" => "Node.js", "logo" => "img/skills-node.js.png" ],
+    [ "name" => "Node.js", "logo" => "img/skills-node-js.png" ],
+    [ "name" => "Express.js", "logo" => "img/skills-express-js.png" ],
     [ "name" => "Python", "logo" => "img/skills-python.png" ],
     [ "name" => "Docker", "logo" => "img/skills-docker.png" ],
     [ "name" => "Linux", "logo" => "img/skills-linux.png" ], 
