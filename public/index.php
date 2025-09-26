@@ -40,7 +40,7 @@ $projects = [
         "img" => "https://cdn.dribbble.com/userupload/17719501/file/original-fe25b3f94b2b4a9f29c0fb8c789fea65.png?resize=752x564&vertical=center",
         "name" => "Playground",
         "description" => "An experimental platform where I test and prototype new web technologies, frameworks, and design ideas before applying them in production projects.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "AJAX", "PHP", "MySQL", "Git", "GitHub", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://app.playground.ca/"
     ],
@@ -48,7 +48,7 @@ $projects = [
         "img" => "img/projects-studhub.jpg",
         "name" => "Studhub",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "AJAX", "PHP", "MySQL", "Git", "GitHub", "Google Analytics"],
         "button" => "View Images",
         "link" => "https://app.studhub.ca/"
     ],
@@ -56,7 +56,7 @@ $projects = [
         "img" => "img/projects-good-shepherd-parish.jpg",
         "name" => "Good Shepherd Parish",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://cecbrazil.ca/"
     ],
@@ -64,7 +64,7 @@ $projects = [
         "img" => "img/projects-myrciis.jpg",
         "name" => "MyRCIIS",
         "description" => "A dedicated student portal for RCIIS that provides international students with access to resources, events, and communication tools during their studies.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "View Images",
         "link" => "https://app.rciis.ca/"
     ],
@@ -72,7 +72,7 @@ $projects = [
         "img" => "img/projects-rciis.jpg",
         "name" => "RCIIS",
         "description" => "The official website of RCIIS, designed to showcase programs, events, and school culture while providing a seamless experience for prospective students.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://rciis.ca/"
     ],
@@ -80,7 +80,7 @@ $projects = [
         "img" => "img/projects-woori-italy-fair.jpg",
         "name" => "Woori Italy Fair",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -88,7 +88,7 @@ $projects = [
         "img" => "img/projects-wooriapp.jpg",
         "name" => "WooriApp",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "View Images",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -96,7 +96,7 @@ $projects = [
         "img" => "img/projects-woori.jpg",
         "name" => "Woori",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -104,7 +104,7 @@ $projects = [
         "img" => "img/projects-funase.jpg",
         "name" => "Funase",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["a", "b", "c"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -491,7 +491,7 @@ $educations = [
 
                                             <div class="row g-0">
 
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-5">
 
                                                     <div class="ratio ratio-1x1 d-none d-lg-block">
                                                         <img src="<?= htmlspecialchars($project['img']) ?>"
@@ -520,16 +520,24 @@ $educations = [
                                                                 <p class="mt-2"><?= htmlspecialchars($project['description']) ?></p>
                                                             </div>
 
-                                                            <div class="d-inline-block d-lg-flex gap-3">
-                                                                <p class="mt-3 mt-lg-0">
-                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary" target="_blank">
-                                                                        <?= htmlspecialchars($project['button']) ?>
-                                                                    </a>
+                                                            <?php if (!empty($project['tech'])): ?>
+
+                                                                <p class="small text-body-secondary mt-2">
+                                                                    <?php foreach ($project['tech'] as $i => $tech): ?>
+                                                                        <?php if ($i > 0): ?>
+                                                                            <i class="bi bi-dot text-secondary small"></i>
+                                                                        <?php endif; ?>
+                                                                        <?= htmlspecialchars($tech) ?>
+                                                                    <?php endforeach; ?>
                                                                 </p>
-                                                                <p class="mt-3 mt-lg-0">
-                                                                    <a href="#" class="btn btn-light-primary">Technologies Used</a>
-                                                                </p>
-                                                            </div>
+
+                                                            <?php endif; ?>
+
+                                                            <p class="mt-3 mt-lg-4">
+                                                                <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary" target="_blank">
+                                                                    <?= htmlspecialchars($project['button']) ?>
+                                                                </a>
+                                                            </p>
 
                                                         </div>
 
@@ -556,7 +564,7 @@ $educations = [
 
                                                 <div class="row g-0">
 
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-5">
 
                                                         <div class="ratio ratio-1x1 d-none d-lg-block">
                                                             <img src="<?= htmlspecialchars($project['img']) ?>"
@@ -585,14 +593,24 @@ $educations = [
                                                                     <p class="mt-2"><?= htmlspecialchars($project['description']) ?></p>
                                                                 </div>
 
-                                                                <div class="d-inline-block d-lg-flex gap-3">
-                                                                    <p class="mt-3 mt-lg-0">
-                                                                        <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary">Live Preview</a>
+                                                                <?php if (!empty($project['tech'])): ?>
+
+                                                                    <p class="small text-body-secondary mt-2">
+                                                                        <?php foreach ($project['tech'] as $i => $tech): ?>
+                                                                            <?php if ($i > 0): ?>
+                                                                                <i class="bi bi-dot text-secondary small"></i>
+                                                                            <?php endif; ?>
+                                                                            <?= htmlspecialchars($tech) ?>
+                                                                        <?php endforeach; ?>
                                                                     </p>
-                                                                    <p class="mt-3 mt-lg-0">
-                                                                        <a href="#" class="btn btn-light-primary">Technologies Used</a>
-                                                                    </p>
-                                                                </div>
+
+                                                                <?php endif; ?>
+
+                                                                <p class="mt-3 mt-lg-4">
+                                                                    <a href="<?= htmlspecialchars($project['link']) ?>" class="btn btn-primary" target="_blank">
+                                                                        <?= htmlspecialchars($project['button']) ?>
+                                                                    </a>
+                                                                </p>
 
                                                             </div>
 
