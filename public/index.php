@@ -40,7 +40,7 @@ $projects = [
         "img" => "https://cdn.dribbble.com/userupload/17719501/file/original-fe25b3f94b2b4a9f29c0fb8c789fea65.png?resize=752x564&vertical=center",
         "name" => "Playground",
         "description" => "An experimental platform where I test and prototype new web technologies, frameworks, and design ideas before applying them in production projects.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "AJAX", "PHP", "MySQL", "Git", "GitHub", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "AJAX", "Node.js", "Express.js", "MySQL", "Git", "GitHub", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://app.playground.ca/"
     ],
@@ -56,7 +56,7 @@ $projects = [
         "img" => "img/projects-good-shepherd-parish.jpg",
         "name" => "Good Shepherd Parish",
         "description" => "A CRM platform built to help agencies and schools manage leads, students, and applications with smart automation and user-friendly workflows.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://cecbrazil.ca/"
     ],
@@ -64,7 +64,7 @@ $projects = [
         "img" => "img/projects-myrciis.jpg",
         "name" => "MyRCIIS",
         "description" => "A dedicated student portal for RCIIS that provides international students with access to resources, events, and communication tools during their studies.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "Laravel", "MySQL", "Git", "GitHub", "Google Analytics"],
         "button" => "View Images",
         "link" => "https://app.rciis.ca/"
     ],
@@ -72,7 +72,7 @@ $projects = [
         "img" => "img/projects-rciis.jpg",
         "name" => "RCIIS",
         "description" => "The official website of RCIIS, designed to showcase programs, events, and school culture while providing a seamless experience for prospective students.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "Laravel", "MySQL", "Git", "GitHub", "Figma", "Canva", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://rciis.ca/"
     ],
@@ -80,7 +80,7 @@ $projects = [
         "img" => "img/projects-woori-italy-fair.jpg",
         "name" => "Woori Italy Fair",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "WordPress", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -88,7 +88,7 @@ $projects = [
         "img" => "img/projects-wooriapp.jpg",
         "name" => "WooriApp",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL"],
         "button" => "View Images",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -96,7 +96,7 @@ $projects = [
         "img" => "img/projects-woori.jpg",
         "name" => "Woori",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "WordPress", "MySQL", "Photoshop", "Google Analytics"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
@@ -104,7 +104,7 @@ $projects = [
         "img" => "img/projects-funase.jpg",
         "name" => "Funase",
         "description" => "A suite of web applications developed for FUNASE, a public child care foundation in Brazil, streamlining operations and improving accessibility.",
-        "tech" => ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Photoshop", "Google Analytics"],
+        "tech" => ["HTML", "CSS", "JavaScript", "Java", ".NET", "Oracle"],
         "button" => "Live Preview",
         "link" => "https://www.funase.pe.gov.br/"
     ],
