@@ -15,7 +15,6 @@ $skills_best = [
 
     // Back-end
     [ "name" => "PHP", "logo" => "img/skills-php.png"],
-    [ "name" => "Laravel", "logo" => "img/skills-laravel.png"],
 
     // Database
     [ "name" => "MySQL", "logo" => "img/skills-mysql.png"],
@@ -35,6 +34,7 @@ $skills_working = [
     [ "name" => "React", "logo" => "img/skills-react.png" ],
 
     // Back-end
+    [ "name" => "Laravel", "logo" => "img/skills-laravel.png"],
     [ "name" => "Node.js", "logo" => "img/skills-node-js.png" ],
     [ "name" => "Express.js", "logo" => "img/skills-express-js.png" ],
     [ "name" => "Python", "logo" => "img/skills-python.png" ],
