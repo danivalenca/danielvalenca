@@ -16,6 +16,7 @@ $skills_best = [
     [ "name" => "AJAX", "logo" => "img/skills-ajax.png"],
     [ "name" => "Git", "logo" => "img/skills-git.png"],
     [ "name" => "GitHub", "logo" => "img/skills-github.png"],
+    [ "name" => "SEO", "logo" => "img/skills-seo.png"],
     [ "name" => "Photoshop", "logo" => "img/skills-photoshop.png"],
     [ "name" => "Figma", "logo" => "img/skills-figma.png"],
 ];
@@ -318,14 +319,14 @@ $educations = [
 
 								<h1 class="fw-bolder">Hi, I'm Daniel Valenca</h1>
 
-								<p class="fs-5 mt-3 mt-lg-4">
-									Full Stack Developer with <?= date('Y') - 2011 ?>+ years of experience in PHP, MySQL, and Bootstrap, focused on building scalable, user-friendly web applications. I’m passionate about clean code, great UX, and solving real-world problems through technology.
-								</p>
+                                <p class="fs-5 mt-3 mt-lg-4">
+                                    Full Stack Web Developer with <?= date('Y') - 2011 ?>+ years of experience, focused on creating solutions that solve real problems, help people work more efficiently, save time, and achieve better results. Beyond work, I am always pursuing new certificates and studies to continuously expand my knowledge.
+                                </p>
 
 								<div class="d-flex flex-column gap-1 fs-5 mt-3 mt-lg-4">
 									<p>💻 Full-Time Web Developer at <a href="https://rciis.ca/" class="link-primary text-decoration-none fw-bold" target="_blank">RCIIS</a></p>
-									<p>🚀 Building <a href="https://app.studhub.ca/" class="link-primary text-decoration-none fw-bold" target="_blank">Studhub</a>, a platform for education & immigration agencies</p>
-									<p>📚 Earning a <a href="https://www.coursera.org/professional-certificates/google-it-automation" class="link-primary text-decoration-none fw-bold" target="_blank">IT Automation with Python Certificate</a> by Google (Coursera)</p>
+									<p>📚 Earning a <a href="https://www.coursera.org/professional-certificates/google-it-automation" class="link-primary text-decoration-none fw-bold" target="_blank">IT Automation with Python Certificate</a> by Google (via Coursera)</p>
+                                    <p>🚀 Building <a href="https://app.studhub.ca/" class="link-primary text-decoration-none fw-bold" target="_blank">Studhub</a>, a platform for education & immigration agencies</p>
 								</div>
 
                                 <div class="card border-light-subtle rounded-4 p-4 mt-3 mt-lg-4">
@@ -334,7 +335,7 @@ $educations = [
 
                                         <div class="col-4 col-md border-end border-light-subtle">
                                             <p class="fs-4 fw-semibold"><?= date('Y') - 2011 ?>+</p>
-                                            <p class="text-body-secondary">Years</p>
+                                            <p class="text-body-secondary">Experience</p>
                                         </div>
 
                                         <div class="col-4 col-md border-end border-light-subtle">
@@ -343,13 +344,13 @@ $educations = [
                                         </div>
 
                                         <div class="col-4 col-md border-end border-light-subtle">
-                                            <p class="fs-4 fw-semibold">26+</p>
-                                            <p class="text-body-secondary">Clients</p>
+                                            <p class="fs-4 fw-semibold"><?= count($educations) ?>+</p>
+                                            <p class="text-body-secondary">Certificates</p>
                                         </div>
 
                                         <div class="col-4 col-md border-end border-light-subtle">
-                                            <p class="fs-4 fw-semibold"><?= count($educations) ?>+</p>
-                                            <p class="text-body-secondary">Certificates</p>
+                                            <p class="fs-4 fw-semibold">26+</p>
+                                            <p class="text-body-secondary">Technologies</p>
                                         </div>
 
                                         <div class="col-4 col-md">
