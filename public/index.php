@@ -4,35 +4,51 @@ require_once __DIR__ . '/src/includes/config.php';
 
 // Define skills
 $skills_best = [
+    // Front-end
     [ "name" => "HTML", "logo" => "img/skills-html.png"],
     [ "name" => "CSS", "logo" => "img/skills-css.png"],
-    [ "name" => "PHP", "logo" => "img/skills-php.png"],
-    [ "name" => "Laravel", "logo" => "img/skills-laravel.png"],
-    [ "name" => "MySQL", "logo" => "img/skills-mysql.png"],
-    [ "name" => "JavaScript", "logo" => "img/skills-javascript.png"],
     [ "name" => "Bootstrap", "logo" => "img/skills-bootstrap.png"],
     [ "name" => "Tailwind", "logo" => "img/skills-tailwind.png"],
+    [ "name" => "JavaScript", "logo" => "img/skills-javascript.png"],
     [ "name" => "jQuery", "logo" => "img/skills-jquery.png"],
     [ "name" => "AJAX", "logo" => "img/skills-ajax.png"],
+
+    // Back-end
+    [ "name" => "PHP", "logo" => "img/skills-php.png"],
+    [ "name" => "Laravel", "logo" => "img/skills-laravel.png"],
+
+    // Database
+    [ "name" => "MySQL", "logo" => "img/skills-mysql.png"],
+
+    // Tools
     [ "name" => "Git", "logo" => "img/skills-git.png"],
     [ "name" => "GitHub", "logo" => "img/skills-github.png"],
+
+    // Other
     [ "name" => "SEO", "logo" => "img/skills-seo.png"],
-    [ "name" => "Photoshop", "logo" => "img/skills-photoshop.png"],
     [ "name" => "Figma", "logo" => "img/skills-figma.png"],
+    [ "name" => "Photoshop", "logo" => "img/skills-photoshop.png"],
 ];
 
 $skills_working = [
+    // Front-end
     [ "name" => "React", "logo" => "img/skills-react.png" ],
+
+    // Back-end
     [ "name" => "Node.js", "logo" => "img/skills-node-js.png" ],
     [ "name" => "Express.js", "logo" => "img/skills-express-js.png" ],
     [ "name" => "Python", "logo" => "img/skills-python.png" ],
-    [ "name" => "Docker", "logo" => "img/skills-docker.png" ],
-    [ "name" => "Linux", "logo" => "img/skills-linux.png" ], 
-    [ "name" => "Cloud AWS", "logo" => "img/skills-cloud-aws.png" ],
-    [ "name" => "Oracle", "logo" => "img/skills-oracle.png" ],
-    [ "name" => "Analytics", "logo" => "img/skills-google-analytics.png" ],
+    [ "name" => "Django", "logo" => "img/skills-django.png" ],
     [ "name" => "Java", "logo" => "img/skills-java.png" ],
     [ "name" => ".NET", "logo" => "img/skills-.net.png" ],
+
+    // Database / Infra
+    [ "name" => "Oracle", "logo" => "img/skills-oracle.png" ],
+    [ "name" => "Linux", "logo" => "img/skills-linux.png" ], 
+    [ "name" => "Cloud AWS", "logo" => "img/skills-cloud-aws.png" ],
+
+    // Other
+    [ "name" => "Analytics", "logo" => "img/skills-google-analytics.png" ],
 ];
 
 // Define projects
