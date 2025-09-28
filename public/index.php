@@ -705,7 +705,7 @@ $educations = [
                                                                 alt="<?= htmlspecialchars($work_experience['position']) ?>"
                                                                 class="object-fit-contain"
                                                                 loading="lazy"
-                                                                style="width: 64px; height: 64px;">
+                                                                style="width: 48px; height: 48px;">
                                                             </div>
 
                                                             <div class="ms-3 text-start">
@@ -713,8 +713,11 @@ $educations = [
                                                                     <?= htmlspecialchars($work_experience['position']) ?>
                                                                     at <strong><?= htmlspecialchars($work_experience['company']) ?></strong>
                                                                 </h4>
-                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($work_experience['period']) ?></p>
-                                                                <p class="mt-1 mt-lg-2"><?= htmlspecialchars($work_experience['location']) ?></p>
+                                                                <p class="mt-1 mt-lg-2">
+                                                                    <?= htmlspecialchars($work_experience['period']) ?>
+                                                                    <i class="bi bi-dot text-secondary small"></i> 
+                                                                    <?= htmlspecialchars($work_experience['location']) ?>
+                                                                </p>
                                                             </div>
 
                                                         </div>
