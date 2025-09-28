@@ -702,7 +702,7 @@ $educations = [
 
                                                             <div class="card bg-light border-light p-3 rounded-4 flex-shrink-0">
                                                                 <img src="<?= htmlspecialchars($work_experience['img']) ?>"
-                                                                alt="<?= htmlspecialchars($work_experience['position']) ?>"
+                                                                alt="<?= htmlspecialchars($work_experience['company']) ?> logo"
                                                                 class="object-fit-contain"
                                                                 loading="lazy"
                                                                 style="width: 48px; height: 48px;">
@@ -713,7 +713,7 @@ $educations = [
                                                                     <?= htmlspecialchars($work_experience['position']) ?>
                                                                     at <strong><?= htmlspecialchars($work_experience['company']) ?></strong>
                                                                 </h4>
-                                                                <p class="mt-1 mt-lg-2">
+                                                                <p class="text-body-secondary mt-1 mt-lg-2">
                                                                     <?= htmlspecialchars($work_experience['period']) ?>
                                                                     <i class="bi bi-dot text-secondary small"></i> 
                                                                     <?= htmlspecialchars($work_experience['location']) ?>
