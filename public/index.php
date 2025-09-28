@@ -26,8 +26,8 @@ $skills_best = [
 
     // Other
     [ "name" => "SEO", "logo" => "img/skills-seo.png"],
-    [ "name" => "Figma", "logo" => "img/skills-figma.png"],
-    [ "name" => "Photoshop", "logo" => "img/skills-photoshop.png"],
+    [ "name" => "Analytics", "logo" => "img/skills-google-analytics.png" ],
+    [ "name" => "Canva", "logo" => "img/skills-canva.png"],
 ];
 
 $skills_working = [
@@ -48,7 +48,8 @@ $skills_working = [
     [ "name" => "Cloud AWS", "logo" => "img/skills-cloud-aws.png" ],
 
     // Other
-    [ "name" => "Analytics", "logo" => "img/skills-google-analytics.png" ],
+    [ "name" => "Figma", "logo" => "img/skills-figma.png"],
+    [ "name" => "Photoshop", "logo" => "img/skills-photoshop.png"],
 ];
 
 // Define projects
