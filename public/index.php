@@ -8,7 +8,6 @@ $skills_best = [
     [ "name" => "HTML", "logo" => "img/skills-html.png"],
     [ "name" => "CSS", "logo" => "img/skills-css.png"],
     [ "name" => "Bootstrap", "logo" => "img/skills-bootstrap.png"],
-    [ "name" => "Tailwind", "logo" => "img/skills-tailwind.png"],
     [ "name" => "JavaScript", "logo" => "img/skills-javascript.png"],
     [ "name" => "jQuery", "logo" => "img/skills-jquery.png"],
     [ "name" => "AJAX", "logo" => "img/skills-ajax.png"],
@@ -31,6 +30,7 @@ $skills_best = [
 
 $skills_working = [
     // Front-end
+    [ "name" => "Tailwind", "logo" => "img/skills-tailwind.png"],
     [ "name" => "React", "logo" => "img/skills-react.png" ],
 
     // Back-end
